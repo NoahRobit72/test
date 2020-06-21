@@ -1,16 +1,22 @@
-﻿using System.IO;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Linq;
+using System.Threading;
+using System.IO;
 
 class Test
 {
     public static void Main()
     {
-        string hi = File.WriteAllText(@"/Users/noahrobitshek/Projects/Blankio/Blankio/Data/Data.txt", "hi");
+        string dataPath = @"Data\Data.txt";
+        string fileInfo;
 
-        System.Console.WriteLine(hi);
+        fileInfo = File.ReadAllText(dataPath);
 
-        System.Console.WriteLine();
-        System.Console.WriteLine("enter");
-        System.Console.ReadLine();
-        System.Console.WriteLine();
+        Console.WriteLine();
+        Console.WriteLine("Press any key to continue");
+        Console.ReadLine();
+       
     }
 }

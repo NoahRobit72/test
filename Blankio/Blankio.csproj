@@ -41,9 +41,9 @@
     <Folder Include="Data\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Data\Data.txt">
+    <Content Include="Data\Data.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
